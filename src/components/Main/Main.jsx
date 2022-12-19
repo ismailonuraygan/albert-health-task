@@ -20,7 +20,6 @@ function Main() {
       const response = await axios.get("https://dummyjson.com/users");
       const data = response.data.users.slice(0, 3);
       setData(data);
-      console.log(data);
     } catch (err) {
       console.log(err);
     }
