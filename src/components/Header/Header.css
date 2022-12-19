@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.search-input {
+  height: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  outline: none;
+}
+
+.consultant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 4px;
+  background-color: var(--light-gray);
+  color: var(--darkest-blue);
+  border-radius: 14px;
+  min-width: 200px;
+}
+
+.consultant-image {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.consultant-image:hover {
+  opacity: 0.8;
+}
+
+.hamburger-menu-open {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .consultant {
+    display: none;
+  }
+  
+  .hamburger-menu-open {
+    display: block;
+    cursor: pointer;
+  }
+}
