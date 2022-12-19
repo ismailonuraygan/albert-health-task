@@ -119,7 +119,7 @@
 .right-down-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .right-down-wrapper h1 {
